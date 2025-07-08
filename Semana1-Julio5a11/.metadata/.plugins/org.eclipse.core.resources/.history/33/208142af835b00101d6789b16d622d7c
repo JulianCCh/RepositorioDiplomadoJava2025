@@ -1,0 +1,136 @@
+package Clases;
+
+public class Variables {
+
+	public static void main(String args[]) {
+		// byte: utiliza un byte de almacenamiento (8 bits) valores entre [-128,127]
+		byte numeroByte = 7;
+
+		// short: emplea el doble de un byte, Valores entre [-32768, 32767]
+		short numeroShort = 32767;
+
+		// int: Almacena en 4 byte, rango [-2147483648, 2147483647]
+		int numeroInt = 41825;
+
+		// long: enplea 8 byte de almacenaiento, rango
+		// [-9223372036854775808,9223372036854775807]
+		long numeroLong = 437527457334325452L;
+
+		// float: tamaño 4 byte. numeros decimales
+		float numeroFloat = 3.1416F;
+
+		// double: tamaño 8 byte. numeros decimales
+		double numeroDouble = 75754646.3533F;
+
+		// boolean: se emplea para valores de verdadero o falso (true-false)
+		boolean VariableBooleana = true;
+
+		// char: almacena caracteres individuales (letra o numero), utiliza 16 bits
+		// se codifica sopbre UTF-16 unicode
+		char numeroChar = 7;
+		char letraChar = 'J';
+
+		// String: instancia de la clase String, permite crear objetos en forma de
+		// cadena de caracteres
+		String variableString = "Hola java";
+
+		// Vector-arreglo: se emplea para almacenar un grupo de datos del mismo tipo
+		// Formas de declarar un arreglo.
+		int vectorUno[] = new int[10];
+		int[] vectorDos = new int[10];
+		int[] vectorTres = new int[10];
+		int vectorCuatro[];
+		int vectorCinco[] = {};
+		int vectorSeis[] = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+		int vectorSiete[] = new int[] { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+
+		// Matriz: almacena grupo de datos del mismo tipo de forma bidimencional
+		// formas de declarar una matriz
+		int matrizUno[][] = new int[4][5];
+		int[][] matrizDos = new int[4][5];
+		int[][] matrizTres = new int[4][5];
+		int matrizCuatro[][];
+		int matrizCinco[][] = {};
+		int matrizSeis[][] = { { 1, 2 }, { 3, 4 } };
+		int matrizSiete[][] = new int[][] { { 1, 2 }, { 3, 4 } };
+
+		// Wrappers: tipo de dato estructurado equivalente para cada dato primitivo en
+		// forma de objeto
+		Byte numeroByteObj = 1;
+		Short numeroShortObj = 2416;
+		Integer NumeroInterger = 987654321;
+		Long numerolomngObj = 5547568676876L;
+		Float numeroFloatObj = 87695675695837262F;
+		Double numeroDoubleObj = 9.7;
+		Boolean variableBooleanObj = true;
+		Character variableCharacter = 'A';
+		Character numeroCharacter = 2;
+
+		// Se pueden crear cariables de mismo tipo contiguamente, se puede o no
+		// inicializar la variable.
+		int a = 1, b = 9, c = 15, d;
+		String nombre, apellido, ciuidad;
+
+		// Se puede asignar una variable a otra variable.
+		String nombrePersona = "julian";
+		String nombreEstudiante = nombrePersona;
+
+		// casteo de valores de variables.
+		String edadTexto = "33";
+		int edadNumero = Integer.parseInt(edadTexto);
+		String estaturaTexto = "1.75";
+		double estaturDouble = Double.parseDouble(estaturaTexto);
+
+		double numeroCasteo = 9.4;
+		int casteoEntero = (int) numeroCasteo;
+
+		int numeroCasteo1 = 9;
+		double casteoDouble = (double) numeroCasteo1;
+
+		// Constantes: para definir una variable constantes se declara con la palabra
+		// 'final' en inicio
+		final int constante = 9;
+		final char letraA = 'A', letraB = 'B';
+		final String acronimo = "CC";
+		final float pi = 3.1416F;
+
+		// OPERADORES
+		// Asignacion
+		int numero1 = 8;
+		int numero2 = 6;
+
+		System.out.println("Variable numero1: " + numero1);
+		System.out.println("Variable numero2: " + numero2);
+
+		// Aritmeticos
+		// 1. Con base a dos numero enteros, realiza las cinco operaciones basicas.
+		// 2. Crea una operacion utilizando numeros enteros y operadores aritmeticos
+		
+		int suma, resta, multip;
+		double division, modulo, operacion;
+		
+		suma = numero1 + numero2;
+		resta = numero1 - numero2;
+		multip = numero1 * numero2;
+		division = numero1 / numero2;
+		modulo = numero1 % numero2;
+		
+		operacion = 34 + 345 * 565 / 45 - 87; 
+		
+		System.out.println("La suma entre numero1 y numero2: " + suma);
+		System.out.println("La resta entre numero1 y numero2: " + resta);
+		System.out.println("La multiplicacion entre numero1 y numero2: " + multip);
+		System.out.println("La division entre numero1 y numero2: " + division);
+		System.out.println("El modulo entre numero1 y numero2: " + modulo);
+		System.out.println("El resultado de la operacion es: " + operacion);
+		
+		// Operadores incrementale
+		
+		int A = 5, B= A++, C = B++;
+		
+		System.out.println("valor de A: " + A + ", valor de B: " + B + ", valor de C: "+ C);
+		
+		
+
+	}
+}
